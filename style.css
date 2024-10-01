@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --main-color: #4caf50;
+}
+body {
+    color: white;
+    background-color: #001e4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px; 
+}
+.app {
+    width: 100%;
+    max-width: 500px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+}
+.app h1 {
+    color: white;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.app h1 span {
+    color: var(--main-color);
+    font-weight: 600;
+    display: block;
+    padding: 12px 0 8px;
+    border-bottom: 2px solid var(--main-color);
+}
+.app .display {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 3px;
+}
+.app .display input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 16px;
+}
+.app .display input::placeholder {
+    color: #777;
+    font-size: 18px;
+}
+.app .display img {
+    width: 20px;
+    cursor: pointer;
+}
+.app  button {
+    width: 250px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--main-color);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+.app button:hover {
+    opacity: 1;
+}
+.app  button img {
+    width: 20px;
+}
+/* select password length buttons */
+.app .select-length {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-top: -10px;
+    transition: all 0.3s;
+}
+.app .select-length.hide {
+    opacity: 0;
+}
+.app .select-length button {
+    color: white;
+    background-color: var(--main-color);
+    font-size: 20px;
+    font-weight: 800;
+    width: calc((250px - (3 * 5px)) / 4);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: all 0.3s;
+    cursor: auto;
+}
+.app .select-length button:hover {
+    opacity: 1;
+}
+
+
+
+

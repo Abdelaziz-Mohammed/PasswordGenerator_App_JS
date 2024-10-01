@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" href="images/icon.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Generate a <span>Random Password</span></h1>
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <img src="images/copy.png" alt="copy-image" id="copy-btn" title="Copy Password">
+        </div>
+        <button type="button" id="generate-btn">
+            <img src="images/generate.png" alt="btn-image">
+            Generate Password
+        </button>
+        <div class="select-length hide" id="select-length-btns">
+            <button type="button" disabled data-number="0" title="Password Length">8</button>
+            <button type="button" disabled data-number="1" title="Password Length">12</button>
+            <button type="button" disabled data-number="2" title="Password Length">16</button>
+            <button type="button" disabled data-number="3" title="Password Length">20</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
